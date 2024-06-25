@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Movie Review Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Top Movies</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Discover the Latest Movie Reviews</h2>
+                <p>Your go-to hub for honest and insightful movie reviews</p>
+                <a href="#" class="btn">Read Reviews</a>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h2>Latest Reviews</h2>
+                <div class="review-cards">
+                    <div class="card">
+                        <img src="./images/movie1.jpg" alt="Movie 1">
+                        <h3>Fight Club</h3>
+                        <p>A disillusioned office worker forms an underground fight club as a form of therapy, only to spiral into chaos.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/movie2.jpg" alt="Movie 2">
+                        <h3>Once Upon a Time in Hollywood</h3>
+                        <p>In 1969 Los Angeles, a fading TV star and his stunt double navigate a changing industry and encounter the Manson family.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/movie3.jpg" alt="Movie 3">
+                        <h3>Casablanca</h3>
+                        <p>Set during World War II, a cynical expatriate encounters a former lover in Casablanca, leading to a fateful decision.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Movie Review Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+	<script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "f23ed3b3-d8f5-4d40-92e5-9b250ce15e5f",
+            apiHost: "http://localhost:3000",
+        })
+        </script>
+</body>
+</html>
